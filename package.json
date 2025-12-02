@@ -1,0 +1,25 @@
+{
+  "name": "palindrome-radar",
+  "version": "1.0.0",
+  "description": "Palindrome radar code kata see: https://www.codurance.com/katas/palindrome-radar",
+  "homepage": "https://github.com/louiechristie/palindrome-radar#readme",
+  "bugs": {
+    "url": "https://github.com/louiechristie/palindrome-radar/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louiechristie/palindrome-radar.git"
+  },
+  "license": "UNLICENSED",
+  "author": "{  \"name\": \"Louie Christie\",  \"url\": \"https://www.louiechristie.com/\"}",
+  "type": "module",
+  "main": "isPalindrome.js",
+  "scripts": {
+    "test": "node --test",
+    "test:watch": "node --test --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
+}
