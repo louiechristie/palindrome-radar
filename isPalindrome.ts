@@ -1,5 +1,4 @@
 const isPallindrome = (input: string) => {
-  console.log("function isPallindrome");
   const lowercase = input.toLocaleLowerCase();
   const cleaned = lowercase.replace(/[^a-z0-9]/g, "");
   const array = cleaned.split("");
