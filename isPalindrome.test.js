@@ -47,3 +47,9 @@ describe("ignore capital letters", () => {
     assert.equal(isPallindrome("Aa"), true);
   });
 });
+
+describe("ignore punctuation", () => {
+  it("should return true for a!", () => {
+    assert.equal(isPallindrome("a!"), true);
+  });
+});
