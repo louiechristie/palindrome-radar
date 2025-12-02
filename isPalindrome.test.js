@@ -60,6 +60,6 @@ describe("ignore word dividers", () => {
   });
 
   it("should return true for 'aa a', space not in middle", () => {
-    assert.equal(isPallindrome("a a"), true);
+    assert.equal(isPallindrome("aa a"), true);
   });
 });
