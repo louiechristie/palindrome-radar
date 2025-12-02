@@ -11,11 +11,19 @@ describe("test happy path", () => {
     assert.equal(isPallindrome("aa"), true);
   });
 
-  it("should return true for 'aa'", () => {
-    assert.equal(isPallindrome("aa"), true);
-  });
-
   it("should return true for 'aaa'", () => {
     assert.equal(isPallindrome("aaa"), true);
+  });
+
+  it("should return true for 'ana'", () => {
+    assert.equal(isPallindrome("ana"), true);
+  });
+
+  it("should return true for 'anna'", () => {
+    assert.equal(isPallindrome("anna"), true);
+  });
+
+  it("should return true for 'anina' with odd letter in middle", () => {
+    assert.equal(isPallindrome("anina"), true);
   });
 });
