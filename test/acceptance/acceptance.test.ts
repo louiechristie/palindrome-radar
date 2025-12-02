@@ -3,32 +3,42 @@ import assert from "node:assert";
 
 import isPallindrome from "../../isPalindrome.ts";
 
-type Test = {
-  input: string;
-  output: boolean;
-};
-
 // From examples at https://www.codurance.com/katas/palindrome-radar
-const tests: Test[] = [
-  { input: "anna", output: true },
-  { input: "anna!", output: true },
-  { input: "race car", output: true },
-  { input: "race car1", output: false },
-  { input: "Race car", output: true },
-  { input: "A man, a plan, a canal, Panama!", output: true },
-  { input: "axDbTbd6", output: false },
-  { input: "6axDbTbd6", output: true },
-  { input: "Hello, World!", output: false },
-];
 
 describe("acceptance tests", () => {
-  tests.forEach((test) => {
-    const { input, output } = test;
-    const result = isPallindrome(input);
-    const description = `${input} should return ${output}`;
+  it("should return true for 'anna'", () => {
+    assert.strictEqual(true, isPallindrome("anna"));
+  });
 
-    it(description, () => {
-      assert.strictEqual(result, output);
-    });
+  it("should return true for 'anna!'", () => {
+    assert.strictEqual(true, isPallindrome("anna!"));
+  });
+
+  it("should return true for 'race car'", () => {
+    assert.strictEqual(true, isPallindrome("race car"));
+  });
+
+  it("should return false for 'race car1'", () => {
+    assert.strictEqual(false, isPallindrome("race car1"));
+  });
+
+  it("should return true for 'Race car'", () => {
+    assert.strictEqual(true, isPallindrome("Race car"));
+  });
+
+  it("should return true for 'A man, a plan, a canal, Panama!'", () => {
+    assert.strictEqual(true, isPallindrome("A man, a plan, a canal, Panama!"));
+  });
+
+  it("should return false for 'axDbTbd6'", () => {
+    assert.strictEqual(false, isPallindrome("axDbTbd6"));
+  });
+
+  it("should return false for '6axDbTbd6'", () => {
+    assert.strictEqual(true, isPallindrome("6axDbTbd6"));
+  });
+
+  it("should return true for 'Hello, World!'", () => {
+    assert.strictEqual(false, isPallindrome("Hello, World!"));
   });
 });
