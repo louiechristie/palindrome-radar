@@ -27,3 +27,13 @@ describe("test happy path", () => {
     assert.equal(isPallindrome("anina"), true);
   });
 });
+
+describe("test un-happy path", () => {
+  it("should return false for 'ab'", () => {
+    assert.equal(isPallindrome("ab"), false);
+  });
+
+  it("should return false for 'abbacus'", () => {
+    assert.equal(isPallindrome("abbacus"), false);
+  });
+});

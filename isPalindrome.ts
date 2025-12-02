@@ -1,6 +1,13 @@
 const isPallindrome = (input: string) => {
   console.log("function isPallindrome");
-  return true;
-}
+  const array = input.split("");
+  const reversedArray = array.reverse();
+  const reversedString = reversedArray.join("");
 
-export default isPallindrome
+  if (input !== reversedString) {
+    return false;
+  }
+  return true;
+};
+
+export default isPallindrome;
