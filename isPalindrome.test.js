@@ -55,7 +55,11 @@ describe("ignore punctuation", () => {
 });
 
 describe("ignore word dividers", () => {
-  it("should return true for a a", () => {
+  it("should return true for 'a a'", () => {
+    assert.equal(isPallindrome("a a"), true);
+  });
+
+  it("should return true for 'aa a', space not in middle", () => {
     assert.equal(isPallindrome("a a"), true);
   });
 });
