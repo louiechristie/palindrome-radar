@@ -6,10 +6,10 @@ const isPallindrome = (input: string) => {
   const reversedArray = array.reverse();
   const reversedString = reversedArray.join("");
 
-  if (cleaned !== reversedString) {
-    return false;
+  if (cleaned === reversedString) {
+    return true;
   }
-  return true;
+  return false;
 };
 
 export default isPallindrome;
