@@ -37,3 +37,13 @@ describe("test un-happy path", () => {
     assert.equal(isPallindrome("abbacus"), false);
   });
 });
+
+describe("ignore capital letters", () => {
+  it("should return true for A", () => {
+    assert.equal(isPallindrome("A"), true);
+  });
+
+  it("should return true for Aa", () => {
+    assert.equal(isPallindrome("Aa"), true);
+  });
+});
