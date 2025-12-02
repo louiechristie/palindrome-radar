@@ -31,6 +31,10 @@ describe("test happy path", () => {
     it("should return true for '1'", () => {
       assert.equal(isPallindrome("1"), true);
     });
+
+    it("should return true for '11', multiple numbers", () => {
+      assert.equal(isPallindrome("11"), true);
+    });
   });
 });
 
@@ -46,6 +50,10 @@ describe("test un-happy path", () => {
   describe("test with numbers", () => {
     it("should return false for 'a1'", () => {
       assert.equal(isPallindrome("a1"), false);
+    });
+
+    it("should return false for '12', , multiple numbers", () => {
+      assert.equal(isPallindrome("12"), false);
     });
   });
 });
