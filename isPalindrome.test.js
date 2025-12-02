@@ -53,3 +53,9 @@ describe("ignore punctuation", () => {
     assert.equal(isPallindrome("a!"), true);
   });
 });
+
+describe("ignore word dividers", () => {
+  it("should return true for a a", () => {
+    assert.equal(isPallindrome("a a"), true);
+  });
+});
