@@ -28,7 +28,7 @@ describe("acceptance tests", () => {
     const description = `${input} should return ${output}`;
 
     it(description, () => {
-      assert.equal(result, output);
+      assert.strictEqual(result, output);
     });
   });
 });
